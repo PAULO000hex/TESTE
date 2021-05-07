@@ -24,9 +24,9 @@
                 <<img src="img/Tades.png" alt="alt"/>
             </div>
             <br/>
-            <a href="ClienteServlet">Listar Clientes</a>
+            <a href="Clientes/ClienteServlet">Listar Clientes</a>
             <a href="Clientes/CadastrarClientes.jsp">cadastrar</a>
-            <a href=""
+            <a href="Funcionarios/cadastrarFuncionario.jsp">cadastrar funcionario</a>
                <br/>
                 <div class="card">
                     <select>

@@ -1,5 +1,3 @@
-
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -11,7 +9,21 @@
 
         <title>Cadastro de Cliente</title>
     </head>
-    <body class="container">
+    <body>
+        <div class="menu">
+            <div class="message">
+                <h3>Olá Paulo - Tecnologia</h3>
+            </div>
+            <div class="logo">
+                <img src=".../img/Tades.png" alt="alt"/>
+            </div>
+            <hr>
+            <div class="options">
+                <ul>
+                    <a href="cadastrarFuncionario.jsp"><li>Cadastrar Funcionário</li></a>
+                </ul>
+            </div>
+        </div>
         <form action = CadastrarClienteServlet method="POST" >
             <div class="half">
                 <div class="space"><h1>Cadastro De Clientes</h1></div>
@@ -32,28 +44,33 @@
                     <h2>Telefone</h2>
                     <input class="txt" type="text" name="telefone">
                 </div>
-                <div class="field">
-                    <h2>Endereço</h2>
-                    <input class="txt" type="text" name="endereco">
-                </div>
-                <div class="field">
-                    <h2>Cidade</h2>
-                    <input class="txt" type="text" name="cidade">
-                </div>
-                <div class="field">
-                    <h2>Estado</h2>
-                    <input class="txt" type="text" name="estado">
-                </div>
-                <div class="field">
-                    <h2>Bairro</h2>
-                    <input class="txt" type="text" name="bairro">
-                </div>
-                <div class="field">
-                    <h2>Data de nascimento</h2>
-                    <input class="txt" type="date" name="nascimento">                
-                </div>
-                <div class="btn"><input type="submit"></div>  
             </div>
-        </form>
-    </body>
+            <div class="half-last">
+                 <div class="space">
+                <h1>&nbsp;</h1>
+            </div>
+            <div class="field">
+                <h2>Endereço</h2>
+                <input class="txt" type="text" name="endereco">
+            </div>
+            <div class="field">
+                <h2>Cidade</h2>
+                <input class="txt" type="text" name="cidade">
+            </div>
+            <div class="field">
+                <h2>Estado</h2>
+                <input class="txt" type="text" name="estado">
+            </div>
+            <div class="field">
+                <h2>Bairro</h2>
+                <input class="txt" type="text" name="bairro">
+            </div>
+            <div class="field">
+                <h2>Data de nascimento</h2>
+                <input class="txt" type="date" name="nascimento">                
+            </div>
+            <div class="btn"><input type="submit"></div>  
+        </div>
+    </form>
+</body>
 </html>
