@@ -10,7 +10,6 @@
         <title>Lista de Clientes</title>
     </head>
     <body>
-        <
         <h1></h1>
         <table>
             <th>NOME</th>
@@ -26,7 +25,6 @@
                 <c:forEach items="${listaClientes}" var = "cliente" >
 
                 <tr>
-
                     <td>${cliente.nome}</td>
                     <td>${cliente.sobrenome}</td>
                     <td>${cliente.cpf}</td>

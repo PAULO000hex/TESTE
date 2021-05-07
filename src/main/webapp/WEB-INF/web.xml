@@ -4,6 +4,7 @@
         <servlet-name>ClienteServlet</servlet-name>
         <servlet-class>main.java.br.sp.senac.tads3a.grupo1.servlet.ClienteServlet</servlet-class>
     </servlet>
+
     <servlet>
         <servlet-name>CadastrarClienteServlet</servlet-name>
         <servlet-class>main.java.br.sp.senac.tads3a.grupo1.servlet.CadastrarClienteServlet</servlet-class>
@@ -14,8 +15,9 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>ClienteServlet</servlet-name>
-        <url-pattern>/ClienteServlet</url-pattern>
+        <url-pattern>/Clientes/ClienteServlet</url-pattern>
     </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>CadastrarClienteServlet</servlet-name>
         <url-pattern>/Clientes/CadastrarClienteServlet</url-pattern>
@@ -29,4 +31,17 @@
             30
         </session-timeout>
     </session-config>
+    
+    <servlet>
+        <servlet-name>CadastrarFuncionarioServlet</servlet-name>
+        <servlet-class>main.java.br.sp.senac.tads3a.grupo1.servlet.CadastrarFuncionarioServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CadastrarFuncionarioServlet</servlet-name>
+        <url-pattern>/Funcionarios/CadastrarFuncionarioServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
 </web-app>
