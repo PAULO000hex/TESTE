@@ -24,24 +24,21 @@
                 <<img src="img/Tades.png" alt="alt"/>
             </div>
             <br/>
-            <a href="Clientes/ClienteServlet">Listar Clientes</a>
+<!--            <a href="Clientes/ClienteServlet">Listar Clientes</a>
             <a href="Clientes/CadastrarClientes.jsp">cadastrar</a>
             <a href="Funcionarios/cadastrarFuncionario.jsp">cadastrar funcionario</a>
             <a href="ProdutoServlet">Listar Produtos</a>
             <a href="Produtos/CadastrarProduto.jsp">Cadastrar Produto</a> <br/>
-            <a href="FuncionarioServlet">Listar Funcionarios</a> <br/>
+            <a href="FuncionarioServlet">Listar Funcionarios</a> <br/>-->
 
                 
                 <div class="card">
                     <select>
-                        <option>Filial 1</option>
-                        <option>Filial 2</option>
-                        <option>Filial 3</option>
-                        <option>Filial 4</option>
+                        <option>Matriz</option>
                     </select>
                 </div>
                 <div class="btn">
-                    <input type="button" value="Acessar">
+                    <a href="Funcionarios/cadastrarFuncionario.jsp"><input type="button" value="Acessar"></a>
                 </div>
         </div>
     </body>
