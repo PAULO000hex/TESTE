@@ -25,7 +25,7 @@ public class ExcluirClienteServlet extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         boolean ok = ClienteDAO.DeletarCli(id);
         if(ok){
-        
+         response.sendRedirect(request.getContextPath() + "/sucesso.jsp");
         }
     }
 
