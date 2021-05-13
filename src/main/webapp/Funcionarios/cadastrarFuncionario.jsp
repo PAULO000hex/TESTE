@@ -1,4 +1,4 @@
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -22,8 +22,30 @@
             <hr>
             <div class="options">
                 <ul>
-                    <a href="cadastrarFuncionario.jsp"><li>Cadastrar Funcionário</li></a>
-                    <a href="listarFuncionarios.jsp"><li>Listar Funcionários</li></a>
+                    <li>Venda
+                        <ul>Vender</ul>
+                        <ul>Consultar Vendas</ul>
+                    </li>
+                    <li>Clientes
+                        <ul>Cadastrar Cliente</ul>
+                        <ul>Consultar Clientes</ul>
+                        <ul>Alterar Cliente</ul>
+                        <ul>Excluir Cliente</ul></li>
+                    <li>Produtos
+                        <ul><a href="cadastrarFuncionario.jsp">Cadastrar Produto</a></ul>
+                        <ul>Consultar Produtos</ul>
+                        <ul>Alterar Produto</ul>
+                        <ul>Excluir Produto</ul></li>
+                    <li>Funcionários
+                        <ul><a href="cadastrarFuncionario.jsp">Cadastrar Funcionário</a></ul>
+                        <ul>Consultar Funcionários</ul>
+                        <ul>Alterar Funcionário</ul>
+                        <ul>Excluir Funcionário</ul></li>
+                    <li>Filiais
+                        <ul>Cadastrar Filial</ul>
+                        <ul>Consultar Filiais</ul>
+                        <ul>Alterar Filial</ul>
+                        <ul>Excluir Filial</ul></li>
                 </ul>
             </div>
         </div>
@@ -85,7 +107,7 @@
             </div>
         </form>
     </c:if>
-    <c:if test="${not empty produto}">
+    <c:if test="${not empty funcionario}">
         <form action=CadastrarFuncionarioServlet method="POST" >
             <div class="half">
                 <div class="space"><h1>Editar</h1></div>
