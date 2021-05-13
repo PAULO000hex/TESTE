@@ -42,7 +42,7 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ExcluirClienteServlet</servlet-name>
-        <url-pattern>/ExcluirClienteServlet</url-pattern>
+        <url-pattern>/Clientes/ExcluirClienteServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>FuncionarioServlet</servlet-name>

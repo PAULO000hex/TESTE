@@ -31,6 +31,7 @@ public class ClienteDAO {
             con = Conexao.getConexao();
             PreparedStatement ps = con.prepareStatement(query);
             ps.setInt(1, id);
+            ps.executeUpdate();
         } catch (SQLException ex) {
             Logger.getLogger(ClienteDAO.class.getName()).log(Level.SEVERE, null, ex);
             ok = false;
