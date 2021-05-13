@@ -4,7 +4,6 @@
         <servlet-name>ClienteServlet</servlet-name>
         <servlet-class>main.java.br.sp.senac.tads3a.grupo1.servlet.ClienteServlet</servlet-class>
     </servlet>
-
     <servlet>
         <servlet-name>CadastrarClienteServlet</servlet-name>
         <servlet-class>main.java.br.sp.senac.tads3a.grupo1.servlet.CadastrarClienteServlet</servlet-class>
@@ -13,11 +12,30 @@
         <servlet-name>ExcluirClienteServlet</servlet-name>
         <servlet-class>main.java.br.sp.senac.tads3a.grupo1.servlet.ExcluirClienteServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ProdutoServlet</servlet-name>
+        <servlet-class>ProdutoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FuncionarioServlet</servlet-name>
+        <servlet-class>FuncionarioServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CadastrarProdutoServlet</servlet-name>
+        <servlet-class>main.java.br.sp.senac.tads3a.grupo1.servlet.CadastrarProdutoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AlterarProdutoServlet</servlet-name>
+        <servlet-class>main.java.br.sp.senac.tads3a.grupo1.servlet.AlterarProdutoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ExcluirProdutoServlet</servlet-name>
+        <servlet-class>main.java.br.sp.senac.tads3a.grupo1.servlet.ExcluirProdutoServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ClienteServlet</servlet-name>
         <url-pattern>/Clientes/ClienteServlet</url-pattern>
     </servlet-mapping>
-
     <servlet-mapping>
         <servlet-name>CadastrarClienteServlet</servlet-name>
         <url-pattern>/Clientes/CadastrarClienteServlet</url-pattern>
@@ -26,12 +44,31 @@
         <servlet-name>ExcluirClienteServlet</servlet-name>
         <url-pattern>/ExcluirClienteServlet</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FuncionarioServlet</servlet-name>
+        <url-pattern>/FuncionarioServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProdutoServlet</servlet-name>
+        <url-pattern>/ProdutoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CadastrarProdutoServlet</servlet-name>
+        <url-pattern>/Produtos/CadastrarProdutoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AlterarProdutoServlet</servlet-name>
+        <url-pattern>/AlterarProdutoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExcluirProdutoServlet</servlet-name>
+        <url-pattern>/ExcluirProdutoServlet</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
-    
     <servlet>
         <servlet-name>CadastrarFuncionarioServlet</servlet-name>
         <servlet-class>main.java.br.sp.senac.tads3a.grupo1.servlet.CadastrarFuncionarioServlet</servlet-class>
@@ -40,8 +77,4 @@
         <servlet-name>CadastrarFuncionarioServlet</servlet-name>
         <url-pattern>/Funcionarios/CadastrarFuncionarioServlet</url-pattern>
     </servlet-mapping>
-    
-    
-    
-    
 </web-app>

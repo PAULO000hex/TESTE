@@ -27,7 +27,11 @@
             <a href="Clientes/ClienteServlet">Listar Clientes</a>
             <a href="Clientes/CadastrarClientes.jsp">cadastrar</a>
             <a href="Funcionarios/cadastrarFuncionario.jsp">cadastrar funcionario</a>
-               <br/>
+            <a href="ProdutoServlet">Listar Produtos</a>
+            <a href="Produtos/CadastrarProduto.jsp">Cadastrar Produto</a> <br/>
+            <a href="FuncionarioServlet">Listar Funcionarios</a> <br/>
+
+                
                 <div class="card">
                     <select>
                         <option>Filial 1</option>
