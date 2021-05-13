@@ -36,14 +36,41 @@ public class FuncionarioDAO {
             ps.setString(10, funcionario.getCidade());
             ps.setString(11, funcionario.getBairro());
             ps.setString(12, funcionario.getEstado());
-            
+
             ps.executeUpdate();
 
         } catch (SQLException e) {
-           Logger.getLogger(FuncionarioDAO.class.getName()).log(Level.SEVERE, null, e);
-           return false;
+            Logger.getLogger(FuncionarioDAO.class.getName()).log(Level.SEVERE, null, e);
+            return false;
         }
         return true;
+    }
+
+    public static List<Funcionario> getFuncionarios() {
+        List<Funcionario> funcionarios = new ArrayList<>();
+        String query = "select * from funcionario";
+        Connection con;
+        try {
+            con = Conexao.getConexao();
+            PreparedStatement ps = con.prepareStatement(query);
+            ResultSet rs = ps.executeQuery();
+
+            while (rs.next()) {
+                int id = rs.getInt("funcionario_id");
+                String nome = rs.getString("nome");
+                String sobrenome = rs.getString("sobrenome");
+                String cpf = rs.getString("cpf");
+                String email = rs.getString("email");
+                String departamento = rs.getString("departamento");
+
+                Funcionario funcionario = new Funcionario(id, nome, sobrenome, cpf, email, departamento);
+                
+                funcionarios.add(funcionario);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(ProdutoDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return funcionarios;
     }
 
 }

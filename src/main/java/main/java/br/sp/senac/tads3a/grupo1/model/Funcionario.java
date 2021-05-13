@@ -7,6 +7,7 @@ import java.sql.Date;
  */
 public class Funcionario {
 
+    private int funcionario_id;
     private String nome;
     private String sobrenome;
     private String CPF;
@@ -14,6 +15,14 @@ public class Funcionario {
     private String telefone;
     private Date nascimento;
     private String departamento;
+
+    public int getFuncionario_id() {
+        return funcionario_id;
+    }
+
+    public void setFuncionario_id(int funcionario_id) {
+        this.funcionario_id = funcionario_id;
+    }
     private float salario;
     private String endereco;
     private String bairro;
@@ -22,6 +31,7 @@ public class Funcionario {
     private boolean status;
 
     public Funcionario(String nome, String sobrenome, String CPF, String email, String telefone, Date nascimento, String departamento, float salario, String endereco, String bairro, String cidade, String estado, boolean status) {
+        
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.CPF = CPF;
@@ -35,6 +45,16 @@ public class Funcionario {
         this.cidade = cidade;
         this.estado = estado;
         this.status = status;
+    }
+    
+        public Funcionario(int funcionario_id, String nome, String sobrenome, String CPF, String email, String departamento) {
+        
+        this.funcionario_id = funcionario_id;
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.CPF = CPF;
+        this.email = email;
+        this.departamento = departamento;
     }
 
     public String getNome() {

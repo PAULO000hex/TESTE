@@ -25,7 +25,7 @@ public class Conexao {
    
     public static Connection getConexao() throws SQLException {
         String url = "jdbc:derby://localhost:1527/TADES";
-        String user = "EU";
+        String user = "eu";
         String pass = "123";
         return DriverManager.getConnection(url, user, pass);
     }

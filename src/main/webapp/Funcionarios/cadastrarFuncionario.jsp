@@ -11,6 +11,7 @@
         <title>Cadastrar Funcionário</title>
     </head>
     <body>
+    <c:if test="${empty funcionario}">    
         <div class="menu">
             <div class="message">
                 <h3>Olá Vitor - Tecnologia</h3>
@@ -83,5 +84,65 @@
                 <div class="btn"><input type="submit"></div>
             </div>
         </form>
-    </body>
+    </c:if>
+    <c:if test="${not empty produto}">
+        <form action=CadastrarFuncionarioServlet method="POST" >
+            <div class="half">
+                <div class="space"><h1>Editar</h1></div>
+                <div class="field">
+                    <h2>Nome</h2>
+                    <input class="txt" type="text" name="nome" value="${funcionario.nome}">
+                </div>
+                <div class="field">
+                    <h2>Sobrenome</h2>
+                    <input class="txt" type="text" name="sobrenome" value="${funcionario.sobrenome}"></div>
+                <div class="field">
+                    <h2>CPF</h2>
+                    <input class="txt" type="text" name="CPF" value="${funcionario.CPF}"></div>
+                <div class="field">
+                    <h2>E-mail</h2>
+                    <input class="txt" type="text" name="email" value="${funcionario.email}"></div>
+                <div class="field">
+                    <h2>Telefone</h2>
+                    <input class="txt" type="text" name="telefone" value="${funcionario.telefone}">
+                </div>
+                <div class="field">
+                    <h2>Data de nascimento</h2>
+                    <input class="txt" type="date" name="nascimento" value="${funcionario.nascimento}">                
+                </div>
+            </div>
+            <div class="half-last">
+                <div class="space">
+                    <h1>&nbsp;</h1>
+                </div>
+                <div class="field">
+                    <h2>Departamento</h2>
+                    <input class="txt" type="text" name="departamento" value="${funcionario.departamento}">               
+                </div>
+                <div class="field">
+                    <h2>Salário</h2>
+                    <input class="txt" type="text" name="salario" value="${funcionario.salario}">              
+                </div>
+                <div class="field">
+                    <h2>Endereço</h2>
+                    <input class="txt" type="text" name="endereco" value="${funcionario.endereco}">                
+                </div>
+                <div class="field">
+                    <h2>Bairro</h2>
+                    <input class="txt" type="text" name="bairro" value="${funcionario.bairro}">                
+                </div>
+                <div class="field">
+                    <h2>Cidade</h2>
+                    <input class="txt" type="text" name="cidade" value="${funcionario.cidade}">               
+                </div>
+                <div class="field">
+                    <h2>Estado</h2>
+                    <input class="txt" type="text" name="estado" value="${funcionario.estado}">                
+                </div>
+                <div class="btn"><input type="submit"></div>
+            </div>
+        </form>
+    </c:if>
+
+</body>
 </html>
